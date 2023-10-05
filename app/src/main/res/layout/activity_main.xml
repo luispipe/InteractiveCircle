@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_yellow1"
+        android:layout_width="97dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="168dp"
+        android:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toTopOf="@+id/tv_red1"
+        app:layout_constraintEnd_toStartOf="@+id/tv_green1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_yellow2"
+        android:layout_width="65dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="67dp"
+        android:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_purple1"
+        app:layout_constraintStart_toEndOf="@+id/tv_red2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_orange1" />
+
+    <Button
+        android:id="@+id/btn_purple1"
+        android:layout_width="97dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_yellow2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_orange" />
+
+    <Button
+        android:id="@+id/btn_purple2"
+        android:layout_width="58dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toTopOf="@+id/btn_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_orange1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_blue2" />
+
+    <Button
+        android:id="@+id/btn_orange1"
+        android:layout_width="97dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="94dp"
+        android:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toTopOf="@+id/btn_yellow2"
+        app:layout_constraintEnd_toStartOf="@+id/btn_purple2"
+        app:layout_constraintStart_toEndOf="@+id/tv_red1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_green2" />
+
+    <Button
+        android:id="@+id/btn_orange"
+        android:layout_width="66dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="67dp"
+        android:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toTopOf="@+id/btn_purple1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_orange1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_purple2" />
+
+    <TextView
+        android:id="@+id/tv_blue1"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/circleblue_drawio"
+        app:layout_constraintBottom_toTopOf="@+id/tv_blue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_green1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_blue2"
+        android:layout_width="62dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/circleblue_drawio"
+        app:layout_constraintBottom_toTopOf="@+id/btn_purple2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_purple2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_blue1" />
+
+    <TextView
+        android:id="@+id/tv_green2"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/circlegreen"
+        app:layout_constraintBottom_toTopOf="@+id/btn_orange1"
+        app:layout_constraintEnd_toStartOf="@+id/btn_purple2"
+        app:layout_constraintStart_toEndOf="@+id/tv_red1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_green1" />
+
+    <TextView
+        android:id="@+id/tv_green1"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="49dp"
+        android:background="@drawable/circlegreen"
+        app:layout_constraintBottom_toTopOf="@+id/tv_green2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_blue1"
+        app:layout_constraintStart_toEndOf="@+id/btn_yellow1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004" />
+
+    <TextView
+        android:id="@+id/tv_red2"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="149dp"
+        android:background="@drawable/circlered"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_purple1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_red1" />
+
+    <TextView
+        android:id="@+id/tv_red1"
+        android:layout_width="62dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circlered"
+        app:layout_constraintBottom_toTopOf="@+id/tv_red2"
+        app:layout_constraintEnd_toStartOf="@+id/btn_orange1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yellow1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
