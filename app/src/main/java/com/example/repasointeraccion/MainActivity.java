@@ -34,61 +34,19 @@ public class MainActivity extends AppCompatActivity {
         red1= findViewById(R.id.tv_red1);
         red2= findViewById(R.id.tv_red2);
 
-        yellow1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                quitarTexto();
-                yellow1.setText("YELLOW");
-                yellow1.setTextColor(Color.BLACK);
-            }
-        });
+        interactiveCircles(yellow1,"YELLOW",Color.BLACK);
+        interactiveCircles(yellow2,"YELLOW",Color.BLACK);
+        interactiveCircles(orange1,"ORANGE",Color.BLACK);
+        interactiveCircles(orange2,"ORANGE",Color.BLACK);
+        interactiveCircles(purple1,"PURPLE",Color.WHITE);
+        interactiveCircles(purple2,"PURPLE",Color.WHITE);
 
-        yellow2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                quitarTexto();
-                yellow2.setText("YELLOW");
-                yellow2.setTextColor(Color.BLACK);
-            }
-        });
-
-        blue1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                quitarTexto();
-                blue1.setText("YELLOW");
-                blue1.setTextColor(Color.WHITE);
-            }
-        });
-
-        blue2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                quitarTexto();
-                blue2.setText("YELLOW");
-                blue2.setTextColor(Color.WHITE);
-            }
-        });
-
-        purple1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                quitarTexto();
-                purple1.setText("YELLOW");
-                purple1.setTextColor(Color.WHITE);
-            }
-        });
-
-        purple2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                quitarTexto();
-                purple2.setText("YELLOW");
-                purple2.setTextColor(Color.WHITE);
-            }
-        });
-
-
+        interactiveCircles(blue1,"BLUE",Color.WHITE);
+        interactiveCircles(blue2,"BLUE",Color.WHITE);
+        interactiveCircles(green1,"GREEN",Color.WHITE);
+        interactiveCircles(green2,"GREEN",Color.WHITE);
+        interactiveCircles(red1,"RED",Color.WHITE);
+        interactiveCircles(red2,"RED",Color.WHITE);
 
     }
 
@@ -106,4 +64,29 @@ public class MainActivity extends AppCompatActivity {
         purple1.setText("");
         purple2.setText("");
     }
+
+    public void interactiveCircles(Button circle,String texto,int color){
+        circle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                quitarTexto();
+                circle.setText(texto);
+                circle.setTextColor(color);
+                circle.setTextSize(14);
+            }
+        });
+    }
+    public void interactiveCircles(TextView circle,String texto,int color){
+        circle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                quitarTexto();
+                circle.setText(texto);
+                circle.setTextColor(color);
+                circle.setTextSize(14);
+            }
+        });
+    }
+
+
 }
